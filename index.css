@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,300&display=swap');
+:root{
+    --main-color1:yellowgreen;
+    --main-color2:green;
+    --primary-color:#fff;
+    --secondary-color:oldlace;
+}
+*{
+    font-family: 'poppins',sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    padding: 0;
+}
+body{
+    background-image: url('/image/t9.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    position: fixed;
+    font-size: large;
+    display: flex;
+    top: 0;left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background-color:var(--secondary-color);
+}
+header h1 a{
+    color: var(--main-color1);
+    text-decoration: none;
+}
+header h1 span{
+    color: darkgreen;
+    text-decoration: none;
+}
+nav a{
+    color: var(--main-color1);
+    padding: .4rem;
+    text-decoration: none;
+}
+.space{
+    min-height: 100vh;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    color: var(--main-color1);
+}
+.home-content{
+    background-color: var(--primary-color);
+    border-radius: .2rem;
+    width: 514.3px;
+}
+.home-content .label{
+    background-color: var(--primary-color);
+}
+.home .home-content{
+    font-size: 1.5rem;
+}
+.home select{
+    font-size: 1.5rem;
+    color: var(--main-color2);
+}
+.footer{
+    background: var(--secondary-color);
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1rem;
+
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--main-color1);
+    padding: 1rem 0;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--main-color1);
+    padding: .5rem;
+}
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    color: var(--main-color1);
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+.footer .box-container .box a i{
+    padding-left: .5rem;
+    font-size: 1.6rem;
+}
+
+form input[type="email"]{
+    width: 100%;
+    padding: 1rem 1.2rem;
+}
+.credit{
+    color: var(--primary-color);
+    text-align: center;
+    background: var(--green);
+    font-size: 2rem;
+}
